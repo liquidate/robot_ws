@@ -46,6 +46,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
   sudo apt install -y ros-noetic-desktop-full && \
   source /opt/ros/noetic/setup.bash && \
   echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc && \
+  sudo apt install ros-noetic-catkin && \
   source ~/.bashrc
 ```
 4. Prepare the system for Gazebo installation
@@ -133,6 +134,7 @@ sudo apt-get -y install build-essential \
 	mkdir build && \
 	cd build && \
 	cmake ../ && \
+  sudo apt install cppcheck && \
 	make -j4 && \
 	sudo make install
 ```
@@ -172,7 +174,7 @@ source ~/.bashrc
 8. Copy the project
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/gwaxG/robot_ws.git
+git clone https://github.com/riensou/robot_ws.git
 ```
 9. Gazebo installation
 ```

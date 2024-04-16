@@ -13,6 +13,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
   sudo apt install -y ros-noetic-desktop-full && \
   source /opt/ros/noetic/setup.bash && \
   echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc && \
+  sudo apt install ros-noetic-catkin && \
   source ~/.bashrc
 
 # uninstall gazebo if it was installed
@@ -95,6 +96,7 @@ sudo apt-get -y install build-essential \
 	mkdir build && \
 	cd build && \
 	cmake ../ && \
+  sudo apt install cppcheck && \
 	make -j4 && \
 	sudo make install
 

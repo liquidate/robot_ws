@@ -42,8 +42,8 @@ Here, the script "stables3_launch.py" is an example, you can modify "stables3_la
 Alternatively, you can provide your own "your_own_template.json" and "your_own_launch.py" for your libraries of choice.  
 You can find working examples [here](https://github.com/gwaxG/robot_ws/tree/main/examples) and instructions to currently used fields of the json-based configuration [here](https://github.com/gwaxG/robot_ws/tree/main/backend).
 
-1. `roslaunh backend learning.launch gui:=true &`  
-2. `roscd backend/scripts/learning/scripts`  
+1. `roslaunch backend learning.launch gui:=true &`  
+2. `roscd backend/scripts/learning_scripts`  
 3. `python stables3_launch.py`
 
 #### Server launching    
